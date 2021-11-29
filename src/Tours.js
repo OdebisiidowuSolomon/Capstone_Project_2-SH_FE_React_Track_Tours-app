@@ -29,7 +29,7 @@ export default function Tours({ tours: tourx }) {
                 <div className="tour-info">
                   <h4>{tour.name}</h4>
                   <div className="tour-price">
-                    <h4>$1,233</h4>
+                    <h4>{tour.price}</h4>
                   </div>
                 </div>
                 <div className="tour-body">
