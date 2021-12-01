@@ -1,47 +1,34 @@
 import React, { useState } from "react";
+import Tour from "./Tour";
 
+export default function Tours({ tours: tourx }) {
+  const [tours, setTours] = useState(tourx);
 
-export default function Tours() {
-  const [tour, settour] = useState([]);
+  const handleDelete = (id) => {
+    setTours((prev) => prev.filter((tour) => tour.id !== id));
+  };
 
-  const handleRefresh = ()=>{
+  const handleRefresh = () => {
     //Reset the tour with the data gotten
-  }
-  
-  const removeTour =(id)=>{
-    let currentTour = tour.filter((t)=>t.id! ==id);
-    settour(currentTour);
-  }
-  
-  return(
-    tour.length===0?
-    <>
-      <h2>No more Tours remaining</h2>
-      <div className='btn' onClick={ handleRefresh }>Refresh</div>
-    </>
-    :
-    <>
-    <h2>Our Tours</h2> 
+    setTours(tourx);
+  };
 
-    {tour.map(tour=>(
-      <div className=''>
-      <img src={tour.image} alt={tour.name} />
-      <div className=''>
-      <div className=''>
-      <h4> {tour.name} </h4>
-      <div className=''><h4>
-      {tour.price} </h4></div>
-      <div className=''>
-      {tour.info} 
+  return tours.length === 0 ? (
+    <div className="title">
+      <h2>No More Tours Remaining</h2>
+      <button className="btn" onClick={handleRefresh}>
+        Refresh
+      </button>
+    </div>
+  ) : (
+    <>
+      <div className="title">
+        <h2>Our Tours</h2>
+        <div className="underline"></div>
       </div>
-      </div>
-      </div>
-      <footer>
-        <button className='' onClick={ () =>removeTour(tour.id) }>Not Interested</button>
-      </footer>
-      </div>
-      )
-    )}
+      {tours.map((tour) => (
+        <Tour tour={tour} key={tour.id} handleDelete={handleDelete} />
+      ))}
     </>
   );
 }
