@@ -18,10 +18,10 @@ You will also see any lint errors in the console.
 
 Active Team Members
 
-Odebisi Solomon Idowu	SH-IT-0051614
-Baribor Saturday	SH-IT-0053366
-Victor Oluwayemi	SH-IT-0048448
-Simeon Alvin Ibodje	SH-IT-0030407
-Ayda Sultan	SH-IT-0072986
-Eke kasiemobi Janfrancis 	SH-IT-0027080
-Mikaheel Azeez babtunde	SH-IT-0010916
+### Odebisi Solomon Idowu	SH-IT-0051614
+### Baribor Saturday	SH-IT-0053366
+### Victor Oluwayemi	SH-IT-0048448
+### Simeon Alvin Ibodje	SH-IT-0030407
+### Ayda Sultan	SH-IT-0072986
+### Eke kasiemobi Janfrancis 	SH-IT-0027080
+### Mikaheel Azeez babtunde	SH-IT-0010916
