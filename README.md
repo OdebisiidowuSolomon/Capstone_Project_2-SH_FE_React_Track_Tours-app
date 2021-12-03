@@ -16,6 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## Live Link
+> [Tours App](https://team-bravo-tours-app.netlify.app/)
+
 Active Team Members
 
 ### Odebisi Solomon Idowu	SH-IT-0051614
